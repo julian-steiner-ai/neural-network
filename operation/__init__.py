@@ -6,9 +6,7 @@ from .activation.sigmoid import Sigmoid
 from .activation.linear import Linear
 from .activation.relu import ReLU
 from .activation.tanh import Tanh
-from .cnn.conv2D import Conv2D as Conv2DOperation
-from .cnn.dropout import Dropout
-from .cnn.flatten import Flatten
+from .dropout import Dropout
 
 __all__ = [
     "Operation",
@@ -18,8 +16,6 @@ __all__ = [
     "Sigmoid",
     "Linear",
     "ReLU",
-    "Tanh",
-    "Conv2DOperation",
-    "Dropout",
-    "Flatten"
+    "Tanh"
+    "Dropout"
 ]
