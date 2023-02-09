@@ -1,6 +1,6 @@
 import numpy as np
 
-from loss import Loss
+from loss.loss import Loss
 
 from utils.utils import normalize, softmax, unnormalize
 
