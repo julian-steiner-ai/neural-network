@@ -2,15 +2,15 @@
 """
 
 import numpy as np
-from ..operation import Operation, WeightMultiply, BiasAdd, Linear, Dropout
-from .layer import Layer
+from operation import Operation, WeightMultiply, BiasAdd, Linear, Dropout
+from layer import Layer
 
 class Dense(Layer):
     """
     """
     def __init__(self,
                  neurons: int,
-                 activation: Operation = Linear(),
+                 activation: Operation=Linear(),
                  conv_in: bool = False,
                  dropout: float = 1.0,
                  weight_init: str = "standard") -> None:

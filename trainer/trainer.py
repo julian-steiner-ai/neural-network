@@ -1,9 +1,9 @@
 import numpy as np
 from copy import deepcopy
 from typing import Tuple
-from ..neural_network import NeuralNetwork
-from ..optimizer import Optimizer
-from ..utils import permute_data
+from nn import NeuralNetwork
+from optimizer import Optimizer
+from utils import permute_data
 
 class Trainer(object):
     '''

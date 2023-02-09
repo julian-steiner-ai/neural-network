@@ -1,5 +1,5 @@
 import numpy as np
-from ..utils import assert_same_shape
+from utils import assert_same_shape
 
 class Operation(object):
 

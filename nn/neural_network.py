@@ -1,10 +1,11 @@
 import numpy as np
 from typing import List
-from ..loss import Loss, MeanSquaredError
-from ..layer import Layer
+from loss import Loss, MeanSquaredError
+from layer import Layer
 
 class LayerBlock(object):
-
+    """
+    """
     def __init__(self, layers: List[Layer]):
         super().__init__()
         self.layers = layers
@@ -49,7 +50,7 @@ class NeuralNetwork(LayerBlock):
     '''
     def __init__(self,
                  layers: List[Layer],
-                 loss: Loss = MeanSquaredError,
+                 loss: Loss=MeanSquaredError,
                  seed: int = 1):
         super().__init__(layers)
         self.loss = loss

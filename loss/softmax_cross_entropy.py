@@ -1,7 +1,7 @@
 import numpy as np
 
-from .loss import Loss
-from ..utils import normalize, softmax, unnormalize
+from loss import Loss
+from utils import normalize, softmax, unnormalize
 
 class SoftmaxCrossEntropy(Loss):
     def __init__(self, eps: float=1e-9) -> None:

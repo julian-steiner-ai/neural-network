@@ -1,6 +1,6 @@
 import numpy as np
 
-from .param_operation import ParamOperation
+from param_operation import ParamOperation
 
 class BiasAdd(ParamOperation):
 

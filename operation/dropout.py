@@ -1,8 +1,11 @@
 import numpy as np
 
-from neural_network.operation import Operation
+from operation import Operation
 
 class Dropout(Operation):
+    """
+    Dropout Operation.
+    """
     def __init__(self, keep_prob: float=0.8):
         super().__init__()
         self.keep_prob = keep_prob

@@ -1,6 +1,6 @@
 import numpy as np
 
-from .optimizer import Optimizer
+from optimizer import Optimizer
 
 class RegularizedSGD(Optimizer):
     def __init__(self,

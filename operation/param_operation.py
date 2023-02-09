@@ -1,6 +1,6 @@
 import numpy as np
-from .operation import Operation
-from ..utils import assert_same_shape
+from operation import Operation
+from utils import assert_same_shape
 
 class ParamOperation(Operation):
 
