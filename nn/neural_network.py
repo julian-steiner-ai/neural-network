@@ -1,7 +1,11 @@
 import numpy as np
+
 from typing import List
-from loss import Loss, MeanSquaredError
-from layer import Layer
+
+from loss.loss import Loss
+from loss.mean_squared_error import MeanSquaredError
+
+from layer.layer import Layer
 
 class LayerBlock(object):
     """

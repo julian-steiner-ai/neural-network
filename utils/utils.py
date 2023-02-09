@@ -53,6 +53,9 @@ def generate_batch(X: np.ndarray,
 def assert_same_shape(output: np.ndarray,
                       output_grad: np.ndarray):
 
+    if output is None or output_grad is None:
+        print("HI")
+
     assert output.shape == output_grad.shape, \
         '''
         Two tensors should have the same shape;

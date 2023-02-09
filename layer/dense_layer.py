@@ -2,8 +2,14 @@
 """
 
 import numpy as np
-from operation import Operation, WeightMultiply, BiasAdd, Linear, Dropout
-from layer import Layer
+
+from operation.operation import Operation
+from operation.weight_multiply import WeightMultiply
+from operation.bias_add import BiasAdd
+from operation.activation.linear import Linear
+from operation.dropout import Dropout
+
+from layer.layer import Layer
 
 class Dense(Layer):
     """

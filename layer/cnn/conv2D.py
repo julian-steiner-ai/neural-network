@@ -1,9 +1,14 @@
 import numpy as np
 
-from operation import Linear
-from layer import Layer
-from operation import Operation, Dropout
-from operation import Conv2DOperation, Flatten
+from layer.layer import Layer
+
+from operation.activation.linear import Linear
+
+from operation.operation import Operation
+from operation.dropout import Dropout
+
+from operation.cnn.conv2D import Conv2D as Conv2DOperation
+from operation.cnn.flatten import Flatten
 
 class Conv2D(Layer):
     """

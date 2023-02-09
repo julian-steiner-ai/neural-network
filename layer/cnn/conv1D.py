@@ -1,5 +1,6 @@
 import numpy as np
-from layer import Layer
+
+from layer.layer import Layer
 
 class Conv1D(Layer):
     """

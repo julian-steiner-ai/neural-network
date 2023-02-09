@@ -1,9 +1,10 @@
 import numpy as np
 from copy import deepcopy
 from typing import Tuple
-from nn import NeuralNetwork
-from optimizer import Optimizer
-from utils import permute_data
+
+from nn.neural_network import NeuralNetwork
+from optimizer.optimizer import Optimizer
+from utils.utils import permute_data
 
 class Trainer(object):
     '''
@@ -70,7 +71,6 @@ class Trainer(object):
                         np.argmax(y_test, axis=1)).sum() * 100.0 / X_test.shape[0]:.2f}%''')
 
             if (e+1) % eval_every == 0:
-
                 test_preds = self.net.forward(X_test, inference=True)
                 loss = self.net.loss.forward(test_preds, y_test)
 

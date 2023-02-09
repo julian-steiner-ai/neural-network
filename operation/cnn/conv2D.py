@@ -1,6 +1,6 @@
 import numpy as np
 
-from operation import ParamOperation
+from operation.param_operation import ParamOperation
 
 class Conv2D(ParamOperation):
     """

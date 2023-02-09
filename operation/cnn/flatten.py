@@ -1,6 +1,6 @@
 import numpy as np
 
-from operation import Operation
+from operation.operation import Operation
 
 class Flatten(Operation):
     def __init__(self):

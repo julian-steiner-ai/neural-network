@@ -1,6 +1,6 @@
 import numpy as np
 
-from operation import Operation
+from operation.operation import Operation
 
 
 class Sigmoid(Operation):
@@ -15,5 +15,4 @@ class Sigmoid(Operation):
 
     def _input_grad(self, output_grad: np.ndarray) -> np.ndarray:
         sigmoid_backward = self.output * (1.0 - self.output)
-        input_grad = sigmoid_backward * output_grad
-        return 
+        return sigmoid_backward * output_grad
